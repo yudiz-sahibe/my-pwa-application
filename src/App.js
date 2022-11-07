@@ -1,24 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div classNameName="App">
+     <div className="contact">
+  <div style={{maxWidth: '400px'}} classNameName='brand'>
+    <img style={{width: '90%'}} src={logo} alt="" />
+  </div>
+  <div className="contact-form">
+    <label for="name">
+      <span className="input-name">
+        Name:
+      </span>
+      <input type="text" name="name" id="name" className="name"></input>
+</label>
+    <label for="email">
+      <span className="input-name">
+        Email address:
+      </span>
+      <input type="text" name="email" id="email" className="email"></input>
+    </label>
+    <label for="project-info">
+      <span className="input-name">
+        Tell about your project:
+      </span>
+      <textarea name="project-info" id="project-info" className="project-info"></textarea>
+    </label>
+    <button className="btn send-btn">
+      Send
+    </button>
+  </div>
+</div>
     </div>
   );
 }
