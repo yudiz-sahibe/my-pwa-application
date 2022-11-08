@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.png';
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
      <div className="contact">
   <div style={{maxWidth: '400px'}} classNameName='brand'>
     <img style={{width: '90%'}} src={logo} alt="" />
-    <h2>hello yudiz</h2>
   </div>
   <div className="contact-form">
     <label for="name">
